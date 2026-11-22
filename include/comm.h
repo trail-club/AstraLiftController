@@ -17,6 +17,8 @@ typedef enum {
   COMM_TYPE_PONG,
   COMM_TYPE_CTRL,
   COMM_TYPE_FEEDBACK,
+  COMM_TYPE_HOME, // start homing; the payload is ignored
+  COMM_TYPE_PARAM, // set the max speed and acceleration; echoed back with the applied values
 } comm_type_t;
 
 extern int comm_payload_size[];
